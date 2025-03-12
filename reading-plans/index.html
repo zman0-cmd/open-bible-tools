@@ -9,7 +9,8 @@
 <body>
     <div class="container">
         <h1>Bible Reading Plan Generator</h1>
-        
+
+        <!-- user input -->
         <label for="startDate">Start Date:</label>
         <input type="date" id="startDate" required>
         
@@ -17,7 +18,9 @@
         <label><input type="radio" name="duration" value="90_days" checked> 90 Days</label><br>
         <label><input type="radio" name="duration" value="6_months"> 6 Months</label><br>
         <label><input type="radio" name="duration" value="1_year"> 1 Year</label><br>
-        
+
+
+        <!-- Call the Script -->
         <button onclick="generateReadingPlan()">Generate Plan</button>
         
         <h2>Generated Plan:</h2>
