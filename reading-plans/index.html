@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Bible Reading Plan Generator</title>
+    <title>Bible Reading Plan Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Bible Reading Plan Generator</h1>
-        <label for="days">Number of Days:</label>
-        <input type="number" id="days" min="1" max="365" value="30">
         
-        <button onclick="generatePlan()">Generate Plan</button>
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" required>
+        
+        <h3>Select Plan Duration:</h3>
+        <label><input type="radio" name="duration" value="90_days" checked> 90 Days</label><br>
+        <label><input type="radio" name="duration" value="6_months"> 6 Months</label><br>
+        <label><input type="radio" name="duration" value="1_year"> 1 Year</label><br>
+        
+        <button onclick="generateReadingPlan()">Generate Plan</button>
         
         <h2>Generated Plan:</h2>
         <pre id="output"></pre>
     </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
-
