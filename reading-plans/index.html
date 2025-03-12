@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Bible Reading Plan Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bible Reading Plan Generator</h1>
+        <label for="days">Number of Days:</label>
+        <input type="number" id="days" min="1" max="365" value="30">
+        
+        <button onclick="generatePlan()">Generate Plan</button>
+        
+        <h2>Generated Plan:</h2>
+        <pre id="output"></pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
