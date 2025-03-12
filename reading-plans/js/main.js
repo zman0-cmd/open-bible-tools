@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Function to check if Apocrypha should be displayed
     function updateApocryphaVisibility() {
         let selectedPlan = planDropdown.value;
-        if (selectedPlan === "whole-bible") {
+        if (selectedPlan === "bible") {
             apocryphaOption.style.display = "block"; // Show checkbox
         } else {
             apocryphaOption.style.display = "none"; // Hide checkbox
