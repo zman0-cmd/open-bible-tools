@@ -13,7 +13,7 @@ async function generateReadingPlan(duration, startDate) {
     let start = new Date(startDate);
     let books = data.books;
     let plan = [];
-    let chaptersPerDay = Math.ceil(1189 / totalDays); // 1189 total chapters in the Bible
+    let chaptersPerDay = Math.ceil(1189 / totalDays); // 1189 total chapters in the protestant Bible
 
     let currentBookIndex = 0;
     let currentChapter = 1;
@@ -55,4 +55,4 @@ async function generateReadingPlan(duration, startDate) {
 }
 
 // Example usage:
-generateReadingPlan("1_year", "2025-01-01");
+// generateReadingPlan("1_year", "2025-01-01");
