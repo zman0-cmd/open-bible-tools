@@ -1,4 +1,4 @@
-# bibletools.github.io
+# bible-tools
 Bible Tools
 
 # Under Construction
