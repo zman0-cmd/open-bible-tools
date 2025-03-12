@@ -8,26 +8,97 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Plan Mode Toggle Switch -->
+    <div id="mode-toggle-container">
+        <span id="modeLabel">Basic Mode</span>
+        <label class="switch">
+            <input type="checkbox" id="modeToggle">
+            <span class="slider round"></span>
+        </label>
+        
+    </div>
+    <br>
+
+    <!-- Dark Mode Toggle -->
+    <div id="theme-toggle-container">
+        <span id="themeLabel">Light Mode</span>
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+        </label>
+        
+    </div>
+
+
     <div class="container">
         <h1>Bible Reading Plan Generator</h1>
 
         <!-- user input -->
         <label for="startDate">Start Date:</label>
         <input type="date" id="startDate" required>
-        
+
+        <div class="advanced">
+            <h3><label for="dateFormat">Format Date:</label></h3>
+            <label><input type="radio" name="dateFormat" value="MDY" checked> MM/DD/YYYY</label>
+            <label><input type="radio" name="dateFormat" value="ISO"> YYYY-MM-DD</label>
+            <label><input type="radio" name="dateFormat" value="DMY"> DD/MM/YYYY</label>
+        </div>
+
+        <div class="advanced">
+            <h3>Reading Order</h3>
+            <label><input type="radio" name="order" value="canonical" checked>Canonical Reading Plan</label><br>
+            <label><input type="radio" name="order" value="random">Random Order (Not yet Implemented)</label>
+        </div>
+                
         <h3>Select Plan Duration:</h3>
-        <label><input type="radio" name="duration" value="90_days" checked> 90 Days</label><br>
-        <label><input type="radio" name="duration" value="6_months"> 6 Months</label><br>
-        <label><input type="radio" name="duration" value="1_year"> 1 Year</label><br>
 
+        <label><input type="radio" name="duration" value="1_year" checked> 1 Year</label>
+        <label><input type="radio" name="duration" value="6_months"> 6 Months</label>
+        <label><input type="radio" name="duration" value="90_days"> 90 Days</label><br>
+        <!--<label><input type="radio" name="duration" value="custom"> Custom</label><br> -->
 
-        <!-- Call the Script -->
-        <button onclick="generateReadingPlan()">Generate Plan</button>
+        <h3><label for="planType">Select Plan Type:</label></h3>
+        <select id="planType">
+            <option value="whole-bible">Whole Bible</option>
+            <option value="new-testament">New Testament</option>
+            <!--
+            <option value="thematic">Thematic</option>
+            <option value="chronological">Chronological</option>
+            -->
+        </select><br>
+        <div id="apocryphaOption" style="display:none;">
+            <label>
+                <input type="checkbox" id="includeApocrypha"> Include Apocrypha
+            </label>
+        </div>
+        <br>
         
-        <h2>Generated Plan:</h2>
-        <pre id="output"></pre>
+
+<button id="generateButton">Generate Plan</button>
+<button id="clearButton">Clear Plan</button>
+
+        <!-- Call the Script
+        <button onclick="generateReadingPlan()">Generate Plan</button>
+    -->
+    <h2>Generated Plan:</h2>
+    <table id="outputTable" border="1">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Reading</th>
+            </tr>
+        </thead>
+        <tbody id="output"></tbody>
+    </table>
     </div>
     
-    <script src="script.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/plans/wholeBible.js"></script>
+    <script src="js/plans/newTestament.js"></script>
+    <!-- 
+    <script src="js/plans/thematic.js"></script>
+    <script src="js/plans/chronological.js"></script>
+    -->
 </body>
 </html>
