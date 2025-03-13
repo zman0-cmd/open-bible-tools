@@ -52,26 +52,30 @@
                 
         <h3>Select Plan Duration:</h3>
 
-        <label><input type="radio" name="duration" value="1_year" checked> 1 Year</label>
-        <label><input type="radio" name="duration" value="6_months"> 6 Months</label>
-        <label><input type="radio" name="duration" value="90_days"> 90 Days</label><br>
-        <!--<label><input type="radio" name="duration" value="custom"> Custom</label><br> -->
+        <div class="radio-container">
 
-        <h3><label for="planType">Select Plan Type:</label></h3>
-        <select id="planType">
-            <option value="whole-bible">Whole Bible</option>
-            <option value="new-testament">New Testament</option>
-            <!--
-            <option value="thematic">Thematic</option>
-            <option value="chronological">Chronological</option>
-            -->
-        </select><br>
+            <label><input type="radio" name="duration" value="1_year" checked> 1 Year</label>
+            <label><input type="radio" name="duration" value="6_months"> 6 Months</label>
+            <label><input type="radio" name="duration" value="90_days"> 90 Days</label>
+            <!--<label><input type="radio" name="duration" value="custom"> Custom</label> -->
+        </div>
+
+        <div class="plan-selector-container">
+            <h3><label for="planType">Select Plan Type:</label></h3>
+            <select id="planType">
+                <option value="whole-bible">Whole Bible</option>
+                <option value="new-testament">New Testament</option>
+                <!--
+                <option value="thematic">Thematic</option>
+                <option value="chronological">Chronological</option>
+                -->
+            </select><br>
+        </div>
             <div id="apocryphaOption" style="display:none;">
                 <label>
                     <input type="checkbox" id="includeApocrypha"> Include Apocrypha [?] <!-- Need to add tool tip about this. This is not scripture-->
                 </label>
-            </div>
-        <br>
+            </div><br>
         
 
 <button id="generateButton">Generate Plan</button>

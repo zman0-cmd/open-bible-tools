@@ -3,7 +3,7 @@ async function generateWholeBiblePlan() {
     let duration = document.querySelector('input[name="duration"]:checked').value;
     let includeApocrypha = document.getElementById("includeApocrypha").checked; // Get user choice
     let order = document.querySelector('input[name="order"]:checked').value;
-
+    
 
     if (!startDate) {
         alert("Please select a start date.");
@@ -31,6 +31,8 @@ async function generateWholeBiblePlan() {
     let extraDays = totalChapters % totalDays; // Remainder to distribute
     let currentBookIndex = 0;
     let currentChapter = 1;
+
+    start.setDate(start.getDate() + 1);
 
 
     for (let day = 1; day <= totalDays; day++) {
