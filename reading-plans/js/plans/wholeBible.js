@@ -34,7 +34,6 @@ async function generateWholeBiblePlan() {
 
     start.setDate(start.getDate() + 1);
 
-
     for (let day = 1; day <= totalDays; day++) {
         let readings = [];
         let chaptersToday = chaptersPerDay + (extraDays > 0 ? 1 : 0); // Add extra chapter to some days
