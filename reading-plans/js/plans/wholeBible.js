@@ -1,5 +1,6 @@
 async function generateWholeBiblePlan() {
     let startDate = document.getElementById("startDate").value;
+    let endDate = document.getElementById("endDate").value;
     let duration = document.querySelector('input[name="duration"]:checked').value;
     let includeApocrypha = document.getElementById("includeApocrypha").checked; // Get user choice
     let order = document.querySelector('input[name="order"]:checked').value;
@@ -20,8 +21,29 @@ async function generateWholeBiblePlan() {
 
     let selectedPlan = includeApocrypha ? data.plans.wholeBibleWithApocrypha : data.plans.wholeBible;
 
-    let totalDays = (duration === "90_days") ? 90 : (duration === "6_months") ? 180 : 365;
+    //let totalDays = (duration === "90_days") ? 90 : (duration === "6_months") ? 180 : 365;
     let start = new Date(startDate);
+    let totalDays;
+
+    if (duration === "custom") {
+        if (!endDate) {
+            alert("Please select an end date.");
+            return;
+        }
+        let end = new Date(endDate);
+        totalDays = Math.ceil((end - start) / (1000 * 60 * 60 * 24)) + 1;
+
+        if (totalDays <= 0) {
+            alert("End date must be after start date.");
+            return;
+        }
+    } 
+        else {
+        totalDays = (duration === "90_days") ? 90 :
+                    (duration === "6_months") ? 180 :
+                    365;
+        }
+
     let books = selectedPlan.books;
     let plan = [];
 
