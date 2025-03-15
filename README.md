@@ -4,10 +4,13 @@ A variety of Bible Tools that are dynamic and easy to use. I can't find a good r
 # Under Construction
 All of this is a WIP by a single dev who has almost no coding experience. This is gonna be a rocky process. Please submit issues and feature requests. It helps me greatly.
 
-# Update 03/14/25
+# Updates
+Notes on updates
+
+## Update 03/14/25
 Added a custom end date feature to Whole bible. Realized that I call the same math functions in many of my documents and could send that to a seperate function so it could be unified. Will look into this later.
 
-# Update 03/11/25
+## Update 03/11/25
 Initial launch and basic code structure. This code is pretty rough sorry yall.
 
 ## Projects coming soon:
