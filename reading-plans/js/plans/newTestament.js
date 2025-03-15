@@ -23,6 +23,8 @@ async function generateNewTestamentPlan() {
     let books = selectedPlan.books;
     let plan = [];
 
+    start.setDate(start.getDate() + 1);
+
     let totalChapters = books.reduce((sum, book) => sum + book.chapters, 0); // Count all chapters
     let remainingChapters = totalChapters;
     let chaptersPerDay = Math.floor(totalChapters / totalDays); // Base amount
