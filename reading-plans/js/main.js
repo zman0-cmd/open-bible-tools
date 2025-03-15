@@ -89,6 +89,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    let durationRadios = document.querySelectorAll('input[name="duration"]');
+    let endDateInput = document.getElementById("endDate");
+
+    // Function to enable/disable endDate field
+    function updateEndDateState() {
+        let selectedOption = document.querySelector('input[name="duration"]:checked').value;
+        if (selectedOption === "custom") {
+            endDateInput.disabled = false; // Enable if "Custom" is selected
+        } else {
+            endDateInput.disabled = true; // Disable for preset durations
+            endDateInput.value = ""; // Clear the input if switching back
+        }
+    }
+
+    // Add event listeners to all radio buttons
+    durationRadios.forEach(radio => {
+        radio.addEventListener("change", updateEndDateState);
+    });
+
+    // Initialize state on page load
+    updateEndDateState();
+});
+
+
 async function generateReadingPlan() {
     let planType = document.getElementById("planType").value;
     
