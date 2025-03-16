@@ -61,27 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    let planDropdown = document.getElementById("planType");
-    let apocryphaOption = document.getElementById("apocryphaOption");
-
-    // Function to check if Apocrypha should be displayed
-    function updateApocryphaVisibility() {
-        let selectedPlan = planDropdown.value;
-        if (selectedPlan === "bible") {
-            apocryphaOption.style.display = "block"; // Show checkbox
-        } else {
-            apocryphaOption.style.display = "none"; // Hide checkbox
-        }
-    }
-
-    // Run function on dropdown change
-    planDropdown.addEventListener("change", updateApocryphaVisibility);
-
-    // Run function once on page load to apply the correct state
-    updateApocryphaVisibility();
-});
-
-document.addEventListener("DOMContentLoaded", () => {
     let clearButton = document.getElementById("clearButton");
 
     clearButton.addEventListener("click", () => {
