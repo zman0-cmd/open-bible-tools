@@ -118,3 +118,5 @@ async function generateReadingPlan() {
             alert("Invalid plan type selected.");
     }
 }
+
+document.getElementById("downloadPDF").addEventListener("click", generatePDF);

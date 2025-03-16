@@ -78,3 +78,38 @@ function formatDate(date) {
 }
 
 
+function generatePDF() {
+    if (!window.jspdf) {
+        alert("PDF library (jsPDF) not loaded.");
+        return;
+    }
+
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(12);
+
+    let y = 10;
+    doc.text("Bible Reading Plan", 105, y, { align: "center" });
+    y += 10;
+
+    let table = document.getElementById("readingPlanTable");
+    if (!table || table.rows.length === 0) {
+        alert("No reading plan to export.");
+        return;
+    }
+
+    for (let row of table.rows) {
+        let rowText = Array.from(row.cells).map(cell => cell.innerText).join(" | ");
+        doc.text(rowText, 10, y);
+        y += 8;
+
+        if (y > 280) { // Create a new page if needed
+            doc.addPage();
+            y = 10;
+        }
+    }
+
+    doc.save("Bible_Reading_Plan.pdf");
+}
