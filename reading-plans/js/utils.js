@@ -94,7 +94,7 @@ function generatePDF() {
     doc.text("Bible Reading Plan", 105, y, { align: "center" });
     y += 10;
 
-    let table = document.getElementById("readingPlanTable");
+    let table = document.getElementById("outputTable");
     if (!table || table.rows.length === 0) {
         alert("No reading plan to export.");
         return;
