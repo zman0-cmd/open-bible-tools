@@ -21,4 +21,4 @@ Notes on updates
 2) TTS portable
 3) More to add soon
 
-Who knows where this will go. Hopefully I can actually see this to completeion. For now support with issues and code is most appreciated and the only way to support this project.
+Who knows where this will go. Hopefully I can actually see this to completeion. For now support with issues and code is most appreciated and the only way to support this project. Financial Support may be accepted later, but I don't know how or where I will do this yet. Praying and seeking wisdom from others first.
