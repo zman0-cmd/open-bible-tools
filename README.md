@@ -7,6 +7,8 @@ All of this is a WIP by a single dev who has almost no coding experience. This i
 # Updates
 Notes on updates
 
+## Update 03/16/25. A few bug fixes, and PDF Generation quickly implemented with jsPDF. I did not refactor the code to include the Math functions as calls to the utils script. Will work on this later when I find some free time.
+
 ## Update 03/14/25
 Added a custom end date feature to Whole bible. Realized that I call the same math functions in many of my documents and could send that to a seperate function so it could be unified. Will look into this later.
 
