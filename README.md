@@ -1,11 +1,11 @@
-# bible-tools
-A variety of Open Bible Tools that are dynamic and easy to use. I can't find a good reading plan generator, so I wanted to have some options for something easy to use and reliable... Also I didn't like anything that I found for what I am working on.
+# open-bible-tools
+A Free & Open-Source Toolkit for Bible Study. I can't find a good reading plan generator, so I wanted to have some options for something easy to use and reliable... Also I didn't like anything that I found...
 
 # Under Construction
-All of this is a WIP by a single dev who has almost no coding experience. This is gonna be a rocky process. Please submit issues and feature requests. It helps me greatly.
+All of this is a WIP by a single dev who has almost no coding experience. This is gonna be a rocky process. Please submit issues and feature requests. It helps me greatly. I am also using this to learn JavaScript and HTML coding.
 
 # Updates
-Notes on updates
+Notes on updates below. dev-blog at notes.zackmace.com
 
 ## Update 03/16/25. 
 - A few bug fixes, and PDF Generation quickly implemented with jsPDF. I did not refactor the code to include the Math functions as calls to the utils script. Will work on this later when I find some free time.
