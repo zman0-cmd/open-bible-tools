@@ -1,0 +1,489 @@
+{
+    "book": "Song of Solomon",
+    "chapters": {
+        "1": {
+            "1": {
+                "verse_id": "17539",
+                "text": "This is Solomon’s Song of Songs."
+            },
+            "2": {
+                "verse_id": "17540",
+                "text": "Let him kiss me with the kisses of his mouth! For your love is more delightful than wine."
+            },
+            "3": {
+                "verse_id": "17541",
+                "text": "The fragrance of your perfume is pleasing; your name is like perfume poured out. No wonder the maidens adore you."
+            },
+            "4": {
+                "verse_id": "17542",
+                "text": "Take me away with you—let us hurry! May the king bring me to his chambers. We will rejoice and delight in you; we will praise your love more than wine. It is only right that they adore you."
+            },
+            "5": {
+                "verse_id": "17543",
+                "text": "I am dark, yet lovely, O daughters of Jerusalem, like the tents of Kedar, like the curtains of Solomon."
+            },
+            "6": {
+                "verse_id": "17544",
+                "text": "Do not stare because I am dark, for the sun has gazed upon me. My mother’s sons were angry with me; they made me a keeper of the vineyards, but my own vineyard I have neglected."
+            },
+            "7": {
+                "verse_id": "17545",
+                "text": "Tell me, O one I love, where do you pasture your sheep? Where do you rest them at midday? Why should I be like a veiled woman beside the flocks of your companions?"
+            },
+            "8": {
+                "verse_id": "17546",
+                "text": "If you do not know, O fairest of women, follow the tracks of the flock, and graze your young goats near the tents of the shepherds."
+            },
+            "9": {
+                "verse_id": "17547",
+                "text": "I compare you, my darling, to a mare among Pharaoh’s chariots."
+            },
+            "10": {
+                "verse_id": "17548",
+                "text": "Your cheeks are beautiful with ornaments, your neck with strings of jewels."
+            },
+            "11": {
+                "verse_id": "17549",
+                "text": "We will make you ornaments of gold, studded with beads of silver."
+            },
+            "12": {
+                "verse_id": "17550",
+                "text": "While the king was at his table, my perfume spread its fragrance."
+            },
+            "13": {
+                "verse_id": "17551",
+                "text": "My beloved is to me a sachet of myrrh resting between my breasts."
+            },
+            "14": {
+                "verse_id": "17552",
+                "text": "My beloved is to me a cluster of henna blossoms in the vineyards of En-gedi."
+            },
+            "15": {
+                "verse_id": "17553",
+                "text": "How beautiful you are, my darling! Oh, how very beautiful! Your eyes are like doves."
+            },
+            "16": {
+                "verse_id": "17554",
+                "text": "How handsome you are, my beloved! Oh, how delightful! The soft grass is our bed."
+            },
+            "17": {
+                "verse_id": "17555",
+                "text": "The beams of our house are cedars; our rafters are fragrant firs."
+            }
+        },
+        "2": {
+            "1": {
+                "verse_id": "17556",
+                "text": "I am a rose of Sharon, a lily of the valley."
+            },
+            "2": {
+                "verse_id": "17557",
+                "text": "Like a lily among the thorns is my darling among the maidens."
+            },
+            "3": {
+                "verse_id": "17558",
+                "text": "Like an apple tree among the trees of the forest is my beloved among the young men. I delight to sit in his shade, and his fruit is sweet to my taste."
+            },
+            "4": {
+                "verse_id": "17559",
+                "text": "He has brought me to the house of wine, and his banner over me is love."
+            },
+            "5": {
+                "verse_id": "17560",
+                "text": "Sustain me with raisins; refresh me with apples, for I am faint with love."
+            },
+            "6": {
+                "verse_id": "17561",
+                "text": "His left hand is under my head, and his right arm embraces me."
+            },
+            "7": {
+                "verse_id": "17562",
+                "text": "O daughters of Jerusalem, I adjure you by the gazelles and does of the field: Do not arouse or awaken love until the time is right."
+            },
+            "8": {
+                "verse_id": "17563",
+                "text": "Listen! My beloved approaches. Look! Here he comes, leaping across the mountains, bounding over the hills."
+            },
+            "9": {
+                "verse_id": "17564",
+                "text": "My beloved is like a gazelle or a young stag. Look, he stands behind our wall, gazing through the windows, peering through the lattice."
+            },
+            "10": {
+                "verse_id": "17565",
+                "text": "My beloved calls to me, “Arise, my darling. Come away with me, my beautiful one."
+            },
+            "11": {
+                "verse_id": "17566",
+                "text": "For now the winter is past; the rain is over and gone."
+            },
+            "12": {
+                "verse_id": "17567",
+                "text": "The flowers have appeared in the countryside; the season of singing has come, and the cooing of turtledoves is heard in our land."
+            },
+            "13": {
+                "verse_id": "17568",
+                "text": "The fig tree ripens its figs; the blossoming vines spread their fragrance. Arise, come away, my darling; come away with me, my beautiful one.”"
+            },
+            "14": {
+                "verse_id": "17569",
+                "text": "O my dove in the clefts of the rock, in the crevices of the cliff, let me see your face, let me hear your voice; for your voice is sweet, and your countenance is lovely."
+            },
+            "15": {
+                "verse_id": "17570",
+                "text": "Catch for us the foxes—the little foxes that ruin the vineyards—for our vineyards are in bloom."
+            },
+            "16": {
+                "verse_id": "17571",
+                "text": "My beloved is mine and I am his; he pastures his flock among the lilies."
+            },
+            "17": {
+                "verse_id": "17572",
+                "text": "Before the day breaks and shadows flee, turn, my beloved, and be like a gazelle or a young stag on the mountains of Bether."
+            }
+        },
+        "3": {
+            "1": {
+                "verse_id": "17573",
+                "text": "On my bed at night I sought the one I love; I sought him, but did not find him."
+            },
+            "2": {
+                "verse_id": "17574",
+                "text": "I will arise now and go about the city, through the streets and squares. I will seek the one I love. So I sought him but did not find him."
+            },
+            "3": {
+                "verse_id": "17575",
+                "text": "I encountered the watchmen on their rounds of the city: “Have you seen the one I love?”"
+            },
+            "4": {
+                "verse_id": "17576",
+                "text": "I had just passed them when I found the one I love. I held him and would not let go until I had brought him to my mother’s house, to the chamber of the one who conceived me."
+            },
+            "5": {
+                "verse_id": "17577",
+                "text": "O daughters of Jerusalem, I adjure you by the gazelles and does of the field: Do not arouse or awaken love until the time is right."
+            },
+            "6": {
+                "verse_id": "17578",
+                "text": "Who is this coming up from the wilderness like a column of smoke, scented with myrrh and frankincense from all the spices of the merchant?"
+            },
+            "7": {
+                "verse_id": "17579",
+                "text": "Behold, it is Solomon’s carriage, escorted by sixty of the mightiest men of Israel."
+            },
+            "8": {
+                "verse_id": "17580",
+                "text": "All are skilled with the sword, experienced in warfare. Each has his sword at his side prepared for the terror of the night."
+            },
+            "9": {
+                "verse_id": "17581",
+                "text": "King Solomon has made his carriage out of the timber of Lebanon."
+            },
+            "10": {
+                "verse_id": "17582",
+                "text": "He has made its posts of silver, its base of gold, its seat of purple fabric. Its interior is inlaid with love by the daughters of Jerusalem."
+            },
+            "11": {
+                "verse_id": "17583",
+                "text": "Come out, O daughters of Zion, and gaze at King Solomon, wearing the crown with which his mother crowned him on the day of his wedding—the day of his heart’s rejoicing."
+            }
+        },
+        "4": {
+            "1": {
+                "verse_id": "17584",
+                "text": "How beautiful you are, my darling—how very beautiful! Your eyes are like doves behind your veil. Your hair is like a flock of goats streaming down Mount Gilead."
+            },
+            "2": {
+                "verse_id": "17585",
+                "text": "Your teeth are like a flock of newly shorn sheep coming up from the washing; each has its twin, and not one of them is lost."
+            },
+            "3": {
+                "verse_id": "17586",
+                "text": "Your lips are like a scarlet ribbon, and your mouth is lovely. Your brow behind your veil is like a slice of pomegranate."
+            },
+            "4": {
+                "verse_id": "17587",
+                "text": "Your neck is like the tower of David, built with rows of stones; on it hang a thousand shields, all of them shields of warriors."
+            },
+            "5": {
+                "verse_id": "17588",
+                "text": "Your breasts are like two fawns, twins of a gazelle grazing among the lilies."
+            },
+            "6": {
+                "verse_id": "17589",
+                "text": "Before the day breaks and the shadows flee, I will make my way to the mountain of myrrh and to the hill of frankincense."
+            },
+            "7": {
+                "verse_id": "17590",
+                "text": "You are altogether beautiful, my darling; in you there is no flaw."
+            },
+            "8": {
+                "verse_id": "17591",
+                "text": "Come with me from Lebanon, my bride, come with me from Lebanon! Descend from the peak of Amana, from the summits of Senir and Hermon, from the dens of the lions, from the mountains of the leopards."
+            },
+            "9": {
+                "verse_id": "17592",
+                "text": "You have captured my heart, my sister, my bride; you have stolen my heart with one glance of your eyes, with one jewel of your neck."
+            },
+            "10": {
+                "verse_id": "17593",
+                "text": "How delightful is your love, my sister, my bride! Your love is much better than wine, and the fragrance of your perfume than all spices."
+            },
+            "11": {
+                "verse_id": "17594",
+                "text": "Your lips, my bride, drip sweetness like the honeycomb; honey and milk are under your tongue, and the fragrance of your garments is like the aroma of Lebanon."
+            },
+            "12": {
+                "verse_id": "17595",
+                "text": "My sister, my bride, you are a garden locked up, a spring enclosed, a fountain sealed."
+            },
+            "13": {
+                "verse_id": "17596",
+                "text": "Your branches are an orchard of pomegranates with the choicest of fruits, with henna and nard,"
+            },
+            "14": {
+                "verse_id": "17597",
+                "text": "with nard and saffron, with calamus and cinnamon, with every kind of frankincense tree, with myrrh and aloes, with all the finest spices."
+            },
+            "15": {
+                "verse_id": "17598",
+                "text": "You are a garden spring, a well of fresh water flowing down from Lebanon."
+            },
+            "16": {
+                "verse_id": "17599",
+                "text": "Awake, O north wind, and come, O south wind. Breathe on my garden and spread the fragrance of its spices. Let my beloved come into his garden and taste its choicest fruits."
+            }
+        },
+        "5": {
+            "1": {
+                "verse_id": "17600",
+                "text": "I have come to my garden, my sister, my bride; I have gathered my myrrh with my spice. I have eaten my honeycomb with my honey; I have drunk my wine with my milk. Eat, O friends, and drink; drink freely, O beloved."
+            },
+            "2": {
+                "verse_id": "17601",
+                "text": "I sleep, but my heart is awake. A sound! My beloved is knocking: “Open to me, my sister, my darling, my dove, my flawless one. My head is drenched with dew, my hair with the dampness of the night.”"
+            },
+            "3": {
+                "verse_id": "17602",
+                "text": "I have taken off my robe—must I put it back on? I have washed my feet—must I soil them again?"
+            },
+            "4": {
+                "verse_id": "17603",
+                "text": "My beloved put his hand to the latch; my heart pounded for him."
+            },
+            "5": {
+                "verse_id": "17604",
+                "text": "I rose up to open for my beloved. My hands dripped with myrrh, my fingers with flowing myrrh on the handles of the bolt."
+            },
+            "6": {
+                "verse_id": "17605",
+                "text": "I opened for my beloved, but he had turned and gone. My heart sank at his departure. I sought him but did not find him. I called, but he did not answer."
+            },
+            "7": {
+                "verse_id": "17606",
+                "text": "I encountered the watchmen on their rounds of the city. They beat me and bruised me; they took away my cloak, those guardians of the walls."
+            },
+            "8": {
+                "verse_id": "17607",
+                "text": "O daughters of Jerusalem, I adjure you, if you find my beloved, tell him I am sick with love."
+            },
+            "9": {
+                "verse_id": "17608",
+                "text": "How is your beloved better than others, O most beautiful among women? How is your beloved better than another, that you charge us so?"
+            },
+            "10": {
+                "verse_id": "17609",
+                "text": "My beloved is dazzling and ruddy, outstanding among ten thousand."
+            },
+            "11": {
+                "verse_id": "17610",
+                "text": "His head is purest gold; his hair is wavy and black as a raven."
+            },
+            "12": {
+                "verse_id": "17611",
+                "text": "His eyes are like doves beside the streams of water, bathed in milk and mounted like jewels."
+            },
+            "13": {
+                "verse_id": "17612",
+                "text": "His cheeks are like beds of spice, towers of perfume. His lips are like lilies, dripping with flowing myrrh."
+            },
+            "14": {
+                "verse_id": "17613",
+                "text": "His arms are rods of gold set with beryl. His body is polished ivory bedecked with sapphires."
+            },
+            "15": {
+                "verse_id": "17614",
+                "text": "His legs are pillars of marble set on bases of pure gold. His appearance is like Lebanon, as majestic as the cedars."
+            },
+            "16": {
+                "verse_id": "17615",
+                "text": "His mouth is most sweet; he is altogether lovely. This is my beloved, and this is my friend, O daughters of Jerusalem."
+            }
+        },
+        "6": {
+            "1": {
+                "verse_id": "17616",
+                "text": "Where has your beloved gone, O most beautiful among women? Which way has he turned? We will seek him with you."
+            },
+            "2": {
+                "verse_id": "17617",
+                "text": "My beloved has gone down to his garden, to the beds of spices, to pasture his flock in the gardens and to gather lilies."
+            },
+            "3": {
+                "verse_id": "17618",
+                "text": "I belong to my beloved and he belongs to me; he pastures his flock among the lilies."
+            },
+            "4": {
+                "verse_id": "17619",
+                "text": "You are as beautiful, my darling, as Tirzah, as lovely as Jerusalem, as majestic as troops with banners."
+            },
+            "5": {
+                "verse_id": "17620",
+                "text": "Turn your eyes away from me, for they have overcome me. Your hair is like a flock of goats streaming down from Gilead."
+            },
+            "6": {
+                "verse_id": "17621",
+                "text": "Your teeth are like a flock of sheep coming up from the washing; each has its twin, and not one of them is lost."
+            },
+            "7": {
+                "verse_id": "17622",
+                "text": "Your brow behind your veil is like a slice of pomegranate."
+            },
+            "8": {
+                "verse_id": "17623",
+                "text": "There are sixty queens and eighty concubines, and maidens without number,"
+            },
+            "9": {
+                "verse_id": "17624",
+                "text": "but my dove, my perfect one, is unique, the favorite of the mother who bore her. The maidens see her and call her blessed; the queens and concubines sing her praises."
+            },
+            "10": {
+                "verse_id": "17625",
+                "text": "Who is this who shines like the dawn, as fair as the moon, as bright as the sun, as majestic as the stars in procession?"
+            },
+            "11": {
+                "verse_id": "17626",
+                "text": "I went down to the walnut grove to see the blossoms of the valley, to see if the vines were budding or the pomegranates were in bloom."
+            },
+            "12": {
+                "verse_id": "17627",
+                "text": "Before I realized it, my desire had set me among the royal chariots of my people."
+            },
+            "13": {
+                "verse_id": "17628",
+                "text": "Come back, come back, O Shulammite! Come back, come back, that we may gaze upon you. Why do you look at the Shulammite, as on the dance of Mahanaim?"
+            }
+        },
+        "7": {
+            "1": {
+                "verse_id": "17629",
+                "text": "How beautiful are your sandaled feet, O daughter of the prince! The curves of your thighs are like jewels, the handiwork of a master."
+            },
+            "2": {
+                "verse_id": "17630",
+                "text": "Your navel is a rounded goblet; it never lacks blended wine. Your waist is a mound of wheat encircled by the lilies."
+            },
+            "3": {
+                "verse_id": "17631",
+                "text": "Your breasts are like two fawns, twins of a gazelle."
+            },
+            "4": {
+                "verse_id": "17632",
+                "text": "Your neck is like a tower made of ivory; your eyes are like the pools of Heshbon by the gate of Bath-rabbim; your nose is like the tower of Lebanon, facing toward Damascus."
+            },
+            "5": {
+                "verse_id": "17633",
+                "text": "Your head crowns you like Mount Carmel, the hair of your head like purple threads; the king is captured in your tresses."
+            },
+            "6": {
+                "verse_id": "17634",
+                "text": "How fair and pleasant you are, O love, with your delights!"
+            },
+            "7": {
+                "verse_id": "17635",
+                "text": "Your stature is like a palm tree; your breasts are clusters of fruit."
+            },
+            "8": {
+                "verse_id": "17636",
+                "text": "I said, “I will climb the palm tree; I will take hold of its fruit.” May your breasts be like clusters of the vine, the fragrance of your breath like apples,"
+            },
+            "9": {
+                "verse_id": "17637",
+                "text": "and your mouth like the finest wine. May it flow smoothly to my beloved, gliding gently over lips and teeth."
+            },
+            "10": {
+                "verse_id": "17638",
+                "text": "I belong to my beloved, and his desire is for me."
+            },
+            "11": {
+                "verse_id": "17639",
+                "text": "Come, my beloved, let us go to the countryside; let us spend the night among the wildflowers."
+            },
+            "12": {
+                "verse_id": "17640",
+                "text": "Let us go early to the vineyards to see if the vine has budded, if the blossom has opened, if the pomegranates are in bloom—there I will give you my love."
+            },
+            "13": {
+                "verse_id": "17641",
+                "text": "The mandrakes send forth a fragrance, and at our door is every delicacy, new as well as old, that I have treasured up for you, my beloved."
+            }
+        },
+        "8": {
+            "1": {
+                "verse_id": "17642",
+                "text": "O that you were to me like a brother who nursed at my mother’s breasts! If I found you outdoors, I would kiss you, and no one would despise me."
+            },
+            "2": {
+                "verse_id": "17643",
+                "text": "I would lead you and bring you to the house of my mother who taught me. I would give you spiced wine to drink, the nectar of my pomegranates."
+            },
+            "3": {
+                "verse_id": "17644",
+                "text": "His left hand is under my head, and his right arm embraces me."
+            },
+            "4": {
+                "verse_id": "17645",
+                "text": "O daughters of Jerusalem, I adjure you: Do not arouse or awaken love until the time is right."
+            },
+            "5": {
+                "verse_id": "17646",
+                "text": "Who is this coming up from the wilderness, leaning on her beloved? I roused you under the apple tree; there your mother conceived you; there she travailed and brought you forth."
+            },
+            "6": {
+                "verse_id": "17647",
+                "text": "Set me as a seal over your heart, as a seal upon your arm. For love is as strong as death, its jealousy as unrelenting as Sheol. Its sparks are fiery flames, the fiercest blaze of all."
+            },
+            "7": {
+                "verse_id": "17648",
+                "text": "Mighty waters cannot quench love; rivers cannot sweep it away. If a man were to give all the wealth of his house for love, his offer would be utterly scorned."
+            },
+            "8": {
+                "verse_id": "17649",
+                "text": "We have a little sister, and her breasts are not yet grown. What shall we do for our sister on the day she is spoken for?"
+            },
+            "9": {
+                "verse_id": "17650",
+                "text": "If she is a wall, we will build a tower of silver upon her. If she is a door, we will enclose her with panels of cedar."
+            },
+            "10": {
+                "verse_id": "17651",
+                "text": "I am a wall, and my breasts are like towers. So I have become in his eyes like one who brings peace."
+            },
+            "11": {
+                "verse_id": "17652",
+                "text": "Solomon had a vineyard in Baal-hamon. He leased it to the tenants. For its fruit, each was to bring a thousand shekels of silver."
+            },
+            "12": {
+                "verse_id": "17653",
+                "text": "But my own vineyard is mine to give; the thousand shekels are for you, O Solomon, and two hundred are for those who tend its fruit."
+            },
+            "13": {
+                "verse_id": "17654",
+                "text": "You who dwell in the gardens, my companions are listening for your voice. Let me hear it!"
+            },
+            "14": {
+                "verse_id": "17655",
+                "text": "Come away, my beloved, and be like a gazelle or a young stag on the mountains of spices."
+            }
+        }
+    }
+}
