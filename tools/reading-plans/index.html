@@ -53,7 +53,6 @@
         <h3>Select Plan Duration:</h3>
 
         <div class="radio-container">
-
             <label><input type="radio" name="duration" value="1_year" checked> 1 Year</label>
             <label><input type="radio" name="duration" value="6_months"> 6 Months</label>
             <label><input type="radio" name="duration" value="90_days"> 90 Days</label>
@@ -68,6 +67,7 @@
             <select id="planType">
                 <option value="whole-bible">Whole Bible</option>
                 <option value="new-testament">New Testament</option>
+                <option value="old-testament">Old Testament</option>
                 <!--
                 <option value="thematic">Thematic</option>
                 <option value="chronological">Chronological</option>
@@ -95,13 +95,13 @@
     </table>
     </div>
 
-    
+    <script src="js/math.js"></script> 
     <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
-    
     <script src="js/libs/jspdf.umd.min.js"></script>
-    <script src="js/plan-script/wholeBible.js"></script>
-    <script src="js/plan-script/newTestament.js"></script>
+    <script src="js/plan-js/wholeBible.js"></script>
+    <script src="js/plan-js/newTestament.js"></script>
+    <script src="js/plan-js/oldTestament.js"></script>
     <!-- 
     <script src="js/plans/thematic.js"></script>
     <script src="js/plans/chronological.js"></script>
