@@ -38,7 +38,6 @@ function formatDate(date) {
 
 }
 
-
 function generatePDF() {
     if (!window.jspdf) {
         alert("PDF library (jsPDF) not loaded.");
@@ -75,8 +74,63 @@ function generatePDF() {
     doc.save("Bible_Reading_Plan.pdf");
 }
 
-function dateMathBasic(date, days) {
-    let result = new Date(date);
-    result.setDate(result.getDate() + days);
-    return result;
+function errorCheckBasic(startDate, order, endDate) {
+    if (!startDate) {
+        alert("Please select a start date.");
+        return;
+    }
+
+    if (!order) {
+        alert("No Order selected");
+        return;
+    } 
+
+    if (!endDate) {
+        alert("Please select an end date.");
+        return
+    }
+}
+
+function generatePlanTextNorm(totalDays, start, plan, books, currentBookIndex, currentChapter, extraDays, chaptersPerDay, remainingChapters){
+    for (let day = 1; day <= totalDays; day++) {
+        let readings = [];
+        let chaptersToday = chaptersPerDay + (extraDays > 0 ? 1 : 0); // Add extra chapter to some days
+        extraDays--; // Reduce extra days as we use them
+
+        while (chaptersToday > 0 && currentBookIndex < books.length) {
+            let book = books[currentBookIndex];
+            let chaptersInBook = book.chapters;
+
+            let endChapter = Math.min(currentChapter + chaptersToday - 1, chaptersInBook);
+
+            // Check the start and end Chapters, if same only output one chapter number. If only one chapter only output book name.
+            if (book.chapters === 1){
+                readings.push (`${book.name}`);
+            }
+                else if (currentChapter === endChapter){ 
+                    readings.push(`${book.name} ${currentChapter}`);
+                }
+                else{
+                    readings.push(`${book.name} ${currentChapter} - ${endChapter}`);
+                }
+
+            chaptersToday -= (endChapter - currentChapter + 1);
+            currentChapter = endChapter + 1;
+
+            if (currentChapter > chaptersInBook) {
+                currentBookIndex++;
+                currentChapter = 1;
+            }
+        }
+
+        let readingDate = new Date(start);
+        readingDate.setDate(start.getDate() + (day - 1));
+
+        plan.push({
+            date: formatDate(readingDate),
+            readings: readings
+        });
+
+        remainingChapters -= readings.length;
+    }
 }

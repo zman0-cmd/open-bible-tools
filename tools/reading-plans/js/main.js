@@ -1,3 +1,6 @@
+//import { generateWholeBiblePlan } from "./whole-bible.js";
+//import { generateNewTestamentPlan } from "./newTestament.js";
+
 // Basic error handling.
 
 document.addEventListener("DOMContentLoaded", () => {
