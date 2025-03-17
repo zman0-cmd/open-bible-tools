@@ -10,7 +10,7 @@ async function generateNewTestamentPlan() {
 
     errorCheckBasic(startDate, order, endDate);
 
-    let response = await fetch("plans/new-testament.json");
+    let response = await fetch("plan-data/new-testament.json");
     let data = await response.json();
 
     let selectedPlan = data.plans.newTestament;

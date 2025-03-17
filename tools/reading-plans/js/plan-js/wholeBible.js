@@ -10,7 +10,7 @@ async function generateWholeBiblePlan() {
 
     errorCheckBasic(startDate, order, endDate);
 
-    let response = await fetch("plans/whole-bible.json");
+    let response = await fetch("plan-data/whole-bible.json");
     let data = await response.json();
 
     let selectedPlan = data.plans.wholeBible;
