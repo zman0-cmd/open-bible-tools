@@ -1,0 +1,466 @@
+{
+    "books": [
+        {
+            "name": "Genesis",
+            "abbreviation": "Gen",
+            "order": 1,
+            "chapters": 50,
+            "filename": "genesis.json"
+        },
+        {
+            "name": "Exodus",
+            "abbreviation": "Ex",
+            "order": 2,
+            "chapters": 40,
+            "filename": "exodus.json"
+        },
+        {
+            "name": "Leviticus",
+            "abbreviation": "Lev",
+            "order": 3,
+            "chapters": 27,
+            "filename": "leviticus.json"
+        },
+        {
+            "name": "Numbers",
+            "abbreviation": "Num",
+            "order": 4,
+            "chapters": 36,
+            "filename": "numbers.json"
+        },
+        {
+            "name": "Deuteronomy",
+            "abbreviation": "Deut",
+            "order": 5,
+            "chapters": 34,
+            "filename": "deuteronomy.json"
+        },
+        {
+            "name": "Joshua",
+            "abbreviation": "Josh",
+            "order": 6,
+            "chapters": 24,
+            "filename": "joshua.json"
+        },
+        {
+            "name": "Judges",
+            "abbreviation": "Judg",
+            "order": 7,
+            "chapters": 21,
+            "filename": "judges.json"
+        },
+        {
+            "name": "Ruth",
+            "abbreviation": "Ruth",
+            "order": 8,
+            "chapters": 4,
+            "filename": "ruth.json"
+        },
+        {
+            "name": "1 Samuel",
+            "abbreviation": "1Sam",
+            "order": 9,
+            "chapters": 31,
+            "filename": "1_samuel.json"
+        },
+        {
+            "name": "2 Samuel",
+            "abbreviation": "2Sam",
+            "order": 10,
+            "chapters": 24,
+            "filename": "2_samuel.json"
+        },
+        {
+            "name": "1 Kings",
+            "abbreviation": "1Kgs",
+            "order": 11,
+            "chapters": 22,
+            "filename": "1_kings.json"
+        },
+        {
+            "name": "2 Kings",
+            "abbreviation": "2Kgs",
+            "order": 12,
+            "chapters": 25,
+            "filename": "2_kings.json"
+        },
+        {
+            "name": "1 Chronicles",
+            "abbreviation": "1Chr",
+            "order": 13,
+            "chapters": 29,
+            "filename": "1_chronicles.json"
+        },
+        {
+            "name": "2 Chronicles",
+            "abbreviation": "2Chr",
+            "order": 14,
+            "chapters": 36,
+            "filename": "2_chronicles.json"
+        },
+        {
+            "name": "Ezra",
+            "abbreviation": "Ezra",
+            "order": 15,
+            "chapters": 10,
+            "filename": "ezra.json"
+        },
+        {
+            "name": "Nehemiah",
+            "abbreviation": "Neh",
+            "order": 16,
+            "chapters": 13,
+            "filename": "nehemiah.json"
+        },
+        {
+            "name": "Esther",
+            "abbreviation": "Est",
+            "order": 17,
+            "chapters": 10,
+            "filename": "esther.json"
+        },
+        {
+            "name": "Job",
+            "abbreviation": "Job",
+            "order": 18,
+            "chapters": 42,
+            "filename": "job.json"
+        },
+        {
+            "name": "Psalms",
+            "abbreviation": "Ps",
+            "order": 19,
+            "chapters": 150,
+            "filename": "psalms.json"
+        },
+        {
+            "name": "Proverbs",
+            "abbreviation": "Prov",
+            "order": 20,
+            "chapters": 31,
+            "filename": "proverbs.json"
+        },
+        {
+            "name": "Ecclesiastes",
+            "abbreviation": "Eccl",
+            "order": 21,
+            "chapters": 12,
+            "filename": "ecclesiastes.json"
+        },
+        {
+            "name": "Song of Solomon",
+            "abbreviation": "Song",
+            "order": 22,
+            "chapters": 8,
+            "filename": "song_of_solomon.json"
+        },
+        {
+            "name": "Isaiah",
+            "abbreviation": "Isa",
+            "order": 23,
+            "chapters": 66,
+            "filename": "isaiah.json"
+        },
+        {
+            "name": "Jeremiah",
+            "abbreviation": "Jer",
+            "order": 24,
+            "chapters": 52,
+            "filename": "jeremiah.json"
+        },
+        {
+            "name": "Lamentations",
+            "abbreviation": "Lam",
+            "order": 25,
+            "chapters": 5,
+            "filename": "lamentations.json"
+        },
+        {
+            "name": "Ezekiel",
+            "abbreviation": "Ezek",
+            "order": 26,
+            "chapters": 48,
+            "filename": "ezekiel.json"
+        },
+        {
+            "name": "Daniel",
+            "abbreviation": "Dan",
+            "order": 27,
+            "chapters": 12,
+            "filename": "daniel.json"
+        },
+        {
+            "name": "Hosea",
+            "abbreviation": "Hos",
+            "order": 28,
+            "chapters": 14,
+            "filename": "hosea.json"
+        },
+        {
+            "name": "Joel",
+            "abbreviation": "Joel",
+            "order": 29,
+            "chapters": 3,
+            "filename": "joel.json"
+        },
+        {
+            "name": "Amos",
+            "abbreviation": "Amos",
+            "order": 30,
+            "chapters": 9,
+            "filename": "amos.json"
+        },
+        {
+            "name": "Obadiah",
+            "abbreviation": "Obad",
+            "order": 31,
+            "chapters": 1,
+            "filename": "obadiah.json"
+        },
+        {
+            "name": "Jonah",
+            "abbreviation": "Jonah",
+            "order": 32,
+            "chapters": 4,
+            "filename": "jonah.json"
+        },
+        {
+            "name": "Micah",
+            "abbreviation": "Mic",
+            "order": 33,
+            "chapters": 7,
+            "filename": "micah.json"
+        },
+        {
+            "name": "Nahum",
+            "abbreviation": "Nah",
+            "order": 34,
+            "chapters": 3,
+            "filename": "nahum.json"
+        },
+        {
+            "name": "Habakkuk",
+            "abbreviation": "Hab",
+            "order": 35,
+            "chapters": 3,
+            "filename": "habakkuk.json"
+        },
+        {
+            "name": "Zephaniah",
+            "abbreviation": "Zeph",
+            "order": 36,
+            "chapters": 3,
+            "filename": "zephaniah.json"
+        },
+        {
+            "name": "Haggai",
+            "abbreviation": "Hag",
+            "order": 37,
+            "chapters": 2,
+            "filename": "haggai.json"
+        },
+        {
+            "name": "Zechariah",
+            "abbreviation": "Zech",
+            "order": 38,
+            "chapters": 14,
+            "filename": "zechariah.json"
+        },
+        {
+            "name": "Malachi",
+            "abbreviation": "Mal",
+            "order": 39,
+            "chapters": 4,
+            "filename": "malachi.json"
+        },
+        {
+            "name": "Matthew",
+            "abbreviation": "Matt",
+            "order": 40,
+            "chapters": 28,
+            "filename": "matthew.json"
+        },
+        {
+            "name": "Mark",
+            "abbreviation": "Mark",
+            "order": 41,
+            "chapters": 16,
+            "filename": "mark.json"
+        },
+        {
+            "name": "Luke",
+            "abbreviation": "Luke",
+            "order": 42,
+            "chapters": 24,
+            "filename": "luke.json"
+        },
+        {
+            "name": "John",
+            "abbreviation": "John",
+            "order": 43,
+            "chapters": 21,
+            "filename": "john.json"
+        },
+        {
+            "name": "Acts",
+            "abbreviation": "Acts",
+            "order": 44,
+            "chapters": 28,
+            "filename": "acts.json"
+        },
+        {
+            "name": "Romans",
+            "abbreviation": "Rom",
+            "order": 45,
+            "chapters": 16,
+            "filename": "romans.json"
+        },
+        {
+            "name": "1 Corinthians",
+            "abbreviation": "1Cor",
+            "order": 46,
+            "chapters": 16,
+            "filename": "1_corinthians.json"
+        },
+        {
+            "name": "2 Corinthians",
+            "abbreviation": "2Cor",
+            "order": 47,
+            "chapters": 13,
+            "filename": "2_corinthians.json"
+        },
+        {
+            "name": "Galatians",
+            "abbreviation": "Gal",
+            "order": 48,
+            "chapters": 6,
+            "filename": "galatians.json"
+        },
+        {
+            "name": "Ephesians",
+            "abbreviation": "Eph",
+            "order": 49,
+            "chapters": 6,
+            "filename": "ephesians.json"
+        },
+        {
+            "name": "Philippians",
+            "abbreviation": "Phil",
+            "order": 50,
+            "chapters": 4,
+            "filename": "philippians.json"
+        },
+        {
+            "name": "Colossians",
+            "abbreviation": "Col",
+            "order": 51,
+            "chapters": 4,
+            "filename": "colossians.json"
+        },
+        {
+            "name": "1 Thessalonians",
+            "abbreviation": "1Thess",
+            "order": 52,
+            "chapters": 5,
+            "filename": "1_thessalonians.json"
+        },
+        {
+            "name": "2 Thessalonians",
+            "abbreviation": "2Thess",
+            "order": 53,
+            "chapters": 3,
+            "filename": "2_thessalonians.json"
+        },
+        {
+            "name": "1 Timothy",
+            "abbreviation": "1Tim",
+            "order": 54,
+            "chapters": 6,
+            "filename": "1_timothy.json"
+        },
+        {
+            "name": "2 Timothy",
+            "abbreviation": "2Tim",
+            "order": 55,
+            "chapters": 4,
+            "filename": "2_timothy.json"
+        },
+        {
+            "name": "Titus",
+            "abbreviation": "Titus",
+            "order": 56,
+            "chapters": 3,
+            "filename": "titus.json"
+        },
+        {
+            "name": "Philemon",
+            "abbreviation": "Philem",
+            "order": 57,
+            "chapters": 1,
+            "filename": "philemon.json"
+        },
+        {
+            "name": "Hebrews",
+            "abbreviation": "Heb",
+            "order": 58,
+            "chapters": 13,
+            "filename": "hebrews.json"
+        },
+        {
+            "name": "James",
+            "abbreviation": "Jas",
+            "order": 59,
+            "chapters": 5,
+            "filename": "james.json"
+        },
+        {
+            "name": "1 Peter",
+            "abbreviation": "1Pet",
+            "order": 60,
+            "chapters": 5,
+            "filename": "1_peter.json"
+        },
+        {
+            "name": "2 Peter",
+            "abbreviation": "2Pet",
+            "order": 61,
+            "chapters": 3,
+            "filename": "2_peter.json"
+        },
+        {
+            "name": "1 John",
+            "abbreviation": "1John",
+            "order": 62,
+            "chapters": 5,
+            "filename": "1_john.json"
+        },
+        {
+            "name": "2 John",
+            "abbreviation": "2John",
+            "order": 63,
+            "chapters": 1,
+            "filename": "2_john.json"
+        },
+        {
+            "name": "3 John",
+            "abbreviation": "3John",
+            "order": 64,
+            "chapters": 1,
+            "filename": "3_john.json"
+        },
+        {
+            "name": "Jude",
+            "abbreviation": "Jude",
+            "order": 65,
+            "chapters": 1,
+            "filename": "jude.json"
+        },
+        {
+            "name": "Revelation",
+            "abbreviation": "Rev",
+            "order": 66,
+            "chapters": 22,
+            "filename": "revelation.json"
+        }
+    ]
+}
