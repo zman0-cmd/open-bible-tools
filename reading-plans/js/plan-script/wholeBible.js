@@ -2,7 +2,6 @@ async function generateWholeBiblePlan() {
     let startDate = document.getElementById("startDate").value;
     let endDate = document.getElementById("endDate").value;
     let duration = document.querySelector('input[name="duration"]:checked').value;
-    let includeApocrypha = document.getElementById("includeApocrypha").checked; // Get user choice
     let order = document.querySelector('input[name="order"]:checked').value;
     
 
@@ -19,7 +18,7 @@ async function generateWholeBiblePlan() {
     let response = await fetch("plans/whole-bible.json");
     let data = await response.json();
 
-    let selectedPlan = includeApocrypha ? data.plans.wholeBibleWithApocrypha : data.plans.wholeBible;
+    let selectedPlan = data.plans.wholeBible;
 
     //let totalDays = (duration === "90_days") ? 90 : (duration === "6_months") ? 180 : 365;
     let start = new Date(startDate);

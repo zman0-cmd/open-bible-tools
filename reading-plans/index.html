@@ -74,15 +74,11 @@
                 -->
             </select><br>
         </div>
-            <div id="apocryphaOption" style="display:none;">
-                <label>
-                    <input type="checkbox" id="includeApocrypha"> Include Apocrypha [?] <!-- Need to add tool tip about this. This is not scripture-->
-                </label>
-            </div><br>
         
 
 <button id="generateButton">Generate Plan</button>
 <button id="clearButton">Clear Plan</button>
+<button id="downloadPDF">Download as a PDF</button>
 
         <!-- Call the Script
         <button onclick="generateReadingPlan()">Generate Plan</button>
@@ -98,11 +94,14 @@
         <tbody id="output"></tbody>
     </table>
     </div>
+
     
     <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/plans/wholeBible.js"></script>
-    <script src="js/plans/newTestament.js"></script>
+    
+    <script src="js/libs/jspdf.umd.min.js"></script>
+    <script src="js/plan-script/wholeBible.js"></script>
+    <script src="js/plan-script/newTestament.js"></script>
     <!-- 
     <script src="js/plans/thematic.js"></script>
     <script src="js/plans/chronological.js"></script>
