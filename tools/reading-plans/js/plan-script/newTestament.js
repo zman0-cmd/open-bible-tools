@@ -2,6 +2,13 @@ async function generateNewTestamentPlan() {
     let startDate = document.getElementById("startDate").value;
     let duration = document.querySelector('input[name="duration"]:checked').value;
     let order = document.querySelector('input[name="order"]:checked').value;
+    let endDateInput = document.getElementById("endDate").value;
+
+    console.log("Start Date:", startDate);
+    console.log("Selected Duration:", duration);
+    console.log("Custom End Date Input:", endDateInput);
+
+    let totalDays;
 
     if (!startDate) {
         alert("Please select a start date.");
@@ -13,17 +20,31 @@ async function generateNewTestamentPlan() {
         return;
     } 
 
+    if (!endDate) {
+        alert("Please select an end date.");
+        return
+    }
+
     let response = await fetch("plans/new-testament.json");
     let data = await response.json();
 
     let selectedPlan = data.plans.newTestament;
 
-    let totalDays = (duration === "90_days") ? 90 : (duration === "6_months") ? 180 : 365;
+    //let totalDays = (duration === "90_days") ? 90 : (duration === "6_months") ? 180 : 365;
     let start = new Date(startDate);
     let books = selectedPlan.books;
     let plan = [];
 
     start.setDate(start.getDate() + 1);
+
+    if (duration === "custom" && endDateInput) {
+        let endDate = new Date(endDateInput);
+        totalDays = Math.ceil((endDate.getTime() - new Date(startDate).getTime()) / (1000 * 60 * 60 * 24)) + 1;    
+    } else {
+        totalDays = (duration === "90_days") ? 90 : (duration === "6_months") ? 180 : 365;
+    }
+
+    console.log("Total Days Calculated:", totalDays);
 
     let totalChapters = books.reduce((sum, book) => sum + book.chapters, 0); // Count all chapters
     let remainingChapters = totalChapters;
@@ -31,6 +52,10 @@ async function generateNewTestamentPlan() {
     let extraDays = totalChapters % totalDays; // Remainder to distribute
     let currentBookIndex = 0;
     let currentChapter = 1;
+
+    console.log("Total Chapters:", totalChapters);
+    console.log("Chapters Per Day:", chaptersPerDay);
+    console.log("Extra Days:", extraDays);
 
 
     for (let day = 1; day <= totalDays; day++) {

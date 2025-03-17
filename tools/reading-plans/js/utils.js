@@ -1,41 +1,3 @@
-function processReadingPlan(planData, startDate, totalDays) {
-    let start = new Date(startDate);
-    let books = planData.books;
-    let plan = [];
-    let chaptersPerDay = Math.ceil(1189 / totalDays);
-
-    let currentBookIndex = 0;
-    let currentChapter = 1;
-
-    for (let day = 1; day <= totalDays; day++) {
-        let reading = [];
-        let chaptersLeft = chaptersPerDay;
-
-        while (chaptersLeft > 0 && currentBookIndex < books.length) {
-            let book = books[currentBookIndex];
-            let chaptersInBook = book.chapters;
-
-            let endChapter = Math.min(currentChapter + chaptersLeft - 1, chaptersInBook);
-            reading.push(`${book.name} ${currentChapter} - ${endChapter}`);
-
-            chaptersLeft -= (endChapter - currentChapter + 1);
-            currentChapter = endChapter + 1;
-
-            if (currentChapter > chaptersInBook) {
-                currentBookIndex++;
-                currentChapter = 1;
-            }
-        }
-
-        let readingDate = new Date(start);
-        readingDate.setDate(start.getDate() + (day - 1));
-
-        plan.push(`${formatDate(readingDate)}: ${reading.join(", ")}`);
-    }
-
-    return plan;
-}
-
 function displayPlan(plan) {
     let outputTable = document.getElementById("output");
     outputTable.innerHTML = ""; // Clear previous content
@@ -54,7 +16,6 @@ function displayPlan(plan) {
         outputTable.appendChild(row);
     });
 }
-
 
 function formatDate(date) {
     let dateFormat = document.querySelector('input[name="dateFormat"]:checked').value;
@@ -112,4 +73,10 @@ function generatePDF() {
     }
 
     doc.save("Bible_Reading_Plan.pdf");
+}
+
+function dateMathBasic(date, days) {
+    let result = new Date(date);
+    result.setDate(result.getDate() + days);
+    return result;
 }

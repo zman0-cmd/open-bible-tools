@@ -44,11 +44,13 @@ input {
 
 button {
     padding: 10px 15px;
+    flex-wrap: wrap;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 10px 10px;
 }
 
 button:hover {
@@ -217,6 +219,7 @@ body.dark-mode {
 .radio-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
     gap: 10px; /* Adds spacing between radio buttons */
@@ -276,3 +279,4 @@ body.dark-mode {
 .radio-container input[type="radio"]:hover {
     border-color: #388E3C; /* Slightly darker green on hover */
 }
+
