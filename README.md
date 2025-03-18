@@ -1,3 +1,6 @@
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/zman0-cmd/open-bible-tools)
+
+
 # open-bible-tools
 A Free & Open-Source Toolkit for Bible Study. I can't find a good reading plan generator, so I wanted to have some options for something easy to use and reliable... Also I didn't like anything that I found...
 
