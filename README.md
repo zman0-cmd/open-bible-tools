@@ -4,6 +4,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/zman0-cmd/open-bible-tools)
 ![GitHub branch status](https://img.shields.io/github/checks-status/zman0-cmd/open-bible-tools/main)
 
+![Alt](https://repobeats.axiom.co/api/embed/d4c16ab6e32b408f294a8f18f71afb4832c10f20.svg "Repobeats analytics image")
 
 # open-bible-tools
 A Free & Open-Source Toolkit for Bible Study. I can't find a good reading plan generator, so I wanted to have some options for something easy to use and reliable... Also I didn't like anything that I found...
