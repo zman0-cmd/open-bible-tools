@@ -1,4 +1,8 @@
+![GitHub License](https://img.shields.io/github/license/zman0-cmd/open-bible-tools)
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/zman0-cmd/open-bible-tools)
+![GitHub repo size](https://img.shields.io/github/repo-size/zman0-cmd/open-bible-tools)
+![GitHub language count](https://img.shields.io/github/languages/count/zman0-cmd/open-bible-tools)
+![GitHub branch status](https://img.shields.io/github/checks-status/zman0-cmd/open-bible-tools/main)
 
 
 # open-bible-tools
