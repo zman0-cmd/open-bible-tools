@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open-Source Bible Tools</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Welcome to Bible Tools</h1>
         <p>Free and open-source tools for Bible study and reading plans.</p>
         
-        <h2>Available Tools</h2>
-        <ul>
-            <li><a href="tools/reading-plans/">📖 Bible Reading Plan Generator - Individual</a></li>
-            <li><a href="#">📖 Bible Reading Plan Generator - Group / Advanced (Coming Soon TM)</a></li>
-           <!-- <li><a href="#">📜 Verse Lookup (Coming Soon)</a></li>
-            <li><a href="#">📚 Cross-Reference Tool (Coming Soon)</a></li> -->
-        </ul>
+        <div class="container">
+            <h2>Legend</h2>
         
-        <footer>
+                <div class="row">
+                    <div class="column"><button class="wip">Work In Progress</button></div>
+                    <div class="column"><button class="nyi">Not Implemented</button></div>
+                    <div class="column"><button>Complete</button></div>
+            </div>
+        </div>
+        <h1>Available Tools</h1>
+        <div class="row">
+            <div class ="column">
+                <h3>Reading Plan Generator</h3>
+                <div class="row">
+                    <div class ="column"><a href="tools/reading-plans/" class="button wip">Individual</a></button></div>
+                    <div class ="column"><a href="tools/group-reading-plans" class="button nyi">Group / Advanced</a></button></div>
+                </div>
+            </div>
+            <div class ="column">
+                <h3>Scripture Tools</h3>
+                <div class="row">
+                    <div class ="column"><a href="tools/verse-lookup" class="button nyi">Verse Search</a></button></div>
+                    <div class ="column"><a href="tools/verse-lookup" class="button nyi">Concordance</a></button></div>
+                </div>
+            </div>
+            </div>
+    </div>
+    </br>
+    </br>
+        <div class="container">
             <p>Made with ❤️ for open-source Bible study.</p>
             <p>released under a MIT license</p>
             <p>Code available at <a href="https://github.com/zman0-cmd/bible-tools">GitHub</a></p>
             <p>v0.0.2-alpha</p>
-        </footer>
-    </div>
+        </div>
 </body>
 </html>
