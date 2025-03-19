@@ -1,0 +1,33 @@
+{
+    "project": {
+      "name": "Open Bible Tools",
+      "description": "A free, open-source online Bible toolset.",
+      "version": "0.x.x",
+      "year": "2025",
+      "license": "MIT",
+      "repository": "",
+      "contributors": 
+        [
+          {
+            "name": "Zackary Mace",
+            "url": ""
+          }
+        ]
+    },
+    "tools": {
+      "readingPlanGenerator": {
+        "name": "Bible Reading Plan Generator",
+        "description": "Generates customized Bible reading plans.",
+        "url": "/tools/reading-plans/"
+      },
+      "futureProject": {
+        "name": "",
+        "description": "",
+        "url": ""
+      }
+    },
+    "footer": {
+      "text": "Open Bible Tools"
+    }
+  }
+  
