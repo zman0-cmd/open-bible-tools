@@ -1,8 +1,4 @@
-//import { generateWholeBiblePlan } from "./whole-bible.js";
-//import { generateNewTestamentPlan } from "./newTestament.js";
-
 // Basic error handling.
-
 document.addEventListener("DOMContentLoaded", () => {
     let generateButton = document.getElementById("generateButton");
     if (generateButton) {
@@ -13,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Advanced mode vs basic mode. Basic mode on refresh. No Local Storage.
-
 document.addEventListener("DOMContentLoaded", () => {
     let modeToggle = document.getElementById("modeToggle");
     let modeLabel = document.getElementById("modeLabel");
@@ -63,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+//code to clear the output table
 document.addEventListener("DOMContentLoaded", () => {
     let clearButton = document.getElementById("clearButton");
 
@@ -71,6 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+// custom end date functions
 document.addEventListener("DOMContentLoaded", () => {
     let durationRadios = document.querySelectorAll('input[name="duration"]');
     let endDateInput = document.getElementById("endDate");
@@ -95,9 +93,14 @@ document.addEventListener("DOMContentLoaded", () => {
     updateEndDateState();
 });
 
-
-async function generateReadingPlan() {
-    let planType = document.getElementById("planType").value;
+// generate the plan.
+function generateReadingPlan() {
+    let planTypeElement = document.getElementById("planType");
+    if (!planTypeElement) {
+        console.error("Error: 'planType' element not found in the document.");
+        return;
+    }
+    let planType = planTypeElement.value;
     
     if (!planType) {
         alert("Please select a plan type.");
@@ -121,5 +124,5 @@ async function generateReadingPlan() {
             alert("Invalid plan type selected.");
     }
 }
-
+// event listener for generate pdf.
 document.getElementById("downloadPDF").addEventListener("click", generatePDF);
