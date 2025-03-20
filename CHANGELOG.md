@@ -9,7 +9,6 @@ Versioning will loosly follow SymVer.
 ### Added
 - Added project metadata, for dynamic changes to project wide code, like footers.
 - Added a changelog. This document.
-- Example: Added a toggle for light/dark mode.
 
 ### Changed
 -
