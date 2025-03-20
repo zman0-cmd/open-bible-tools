@@ -10,10 +10,11 @@ Versioning will loosly follow SymVer.
 ### Added
 
 - Added project metadata, for dynamic changes to project wide code, like footers.
-- Added a changelog. This document.
+- Added a changelog.
 
 ### Changed
 
+- Theme and CSS are unified for the project.
 -
 
 ### Fixed
