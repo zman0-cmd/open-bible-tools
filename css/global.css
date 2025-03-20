@@ -91,7 +91,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    filter: brightness(70%);
 }
 
 table {
@@ -183,6 +183,7 @@ body.dark-mode {
     background-color: #1e1e1e;
 }
 
+/*
 .dark-mode button {
         padding: 10px 15px;
         background-color: #00b862;
@@ -196,6 +197,7 @@ body.dark-mode {
         background-color: #006636;
     }
 
+*/
 /* Style for the dropdown container */
 .plan-selector-container {
     display: flex;
@@ -318,10 +320,11 @@ body.dark-mode {
 }
 
 
-
+/*
 .button:hover {
     filter: brightness(70%);
 }
+*/
 
 .nyi{
     background-color: darkgray;
