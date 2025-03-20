@@ -16,6 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         themeLabel.textContent = isDarkMode ? "Dark Mode" : "Light Mode";
 
         // Save preference in local storage
-        localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+        // localStorage.setItem("theme", isDarkMode ? "dark" : "light");
     });
 });
