@@ -27,6 +27,7 @@ Check out the full update log and dev notes on my **"dev-blog"**:
 > *(Let’s be real—it’s not much of a “blog” yet, but it’s where I track progress.)*
 
 ### **Recent Changes**
+- Look at the change log for current updates!
 - **03/17/25** - Refactored code for better previews.
 - **03/16/25** – Implemented **PDF Generation** using jsPDF. Still need to refactor math functions into a separate utility script.
 - **03/14/25** – Added a **custom end date** feature. Realized I call the same math functions in multiple places—need to unify them later.
