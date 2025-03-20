@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/global.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open-Source Bible Tools</title>
 </head>
 <body>
+    <div id="theme-toggle-container">
+        <span id="themeLabel">Light Mode</span>
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
     <div class="container">
         <h1>Welcome to Bible Tools</h1>
         <p>Free and open-source tools for Bible study and reading plans.</p>
@@ -38,13 +45,15 @@
             </div>
             </div>
     </div>
-    </br>
-    </br>
-        <div class="container">
-            <p>Made with ❤️ for open-source Bible study.</p>
-            <p>released under a MIT license</p>
-            <p>Code available at <a href="https://github.com/zman0-cmd/bible-tools">GitHub</a></p>
-            <p>v0.0.2-alpha</p>
-        </div>
+
+    <!-- Include the on-load.js script -->
+    <script src="js/on-load.js"></script>
+
+    <!-- Call the function to load scripts -->
+    <script>
+        loadScriptsAll();
+    </script>
+
+<script src="../../js/footer.js"></script>
 </body>
 </html>

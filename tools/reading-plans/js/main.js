@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
-
+/*
 // Theme code
 document.addEventListener("DOMContentLoaded", () => {
     let themeToggle = document.getElementById("themeToggle");
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("theme", isDarkMode ? "dark" : "light");
     });
 });
-
+*/
 //code to clear the output table
 document.addEventListener("DOMContentLoaded", () => {
     let clearButton = document.getElementById("clearButton");

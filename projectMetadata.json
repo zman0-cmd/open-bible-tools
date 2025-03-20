@@ -2,15 +2,16 @@
     "project": {
       "name": "Open Bible Tools",
       "description": "A free, open-source online Bible toolset.",
-      "version": "0.x.x",
+      "version": "v0.1.0",
+      "lastUpdate": "2025-03-20",
       "year": "2025",
-      "license": "MIT",
-      "repository": "",
+      "license": "MIT License",
+      "repository": "https://github.com/zman0-cmd/open-bible-tools",
       "contributors": 
         [
           {
             "name": "Zackary Mace",
-            "url": ""
+            "url": "https://zackmace.com"
           }
         ]
     },
@@ -27,7 +28,11 @@
       }
     },
     "footer": {
-      "text": "Open Bible Tools"
+      "text1": "Open Bible Tools",
+      "text2": "A free, open-source online Bible toolset. Released under a ",
+      "text3": "Source code available at: ",
+      "text4": "Version: ",
+      "text5": "Last update: "
     }
   }
   
