@@ -125,4 +125,4 @@ function generateReadingPlan() {
     }
 }
 // event listener for generate pdf.
-document.getElementById("downloadPDF").addEventListener("click", generatePDF);
+document.getElementById("downloadPDF").addEventListener("click", generatePDF); 
