@@ -15,7 +15,7 @@ Versioning will loosly follow SymVer.
 ### Changed
 
 - Theme and CSS are unified for the project.
--
+- Minor theme tweeks across the whole project.
 
 ### Fixed
 

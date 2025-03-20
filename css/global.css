@@ -94,7 +94,7 @@ button {
     margin: 10px 10px;
 }
 
-button:hover {
+button:hover, .button:hover{
     filter: brightness(70%);
 }
 
