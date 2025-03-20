@@ -7,7 +7,7 @@ async function loadFooter() {
         footer.innerHTML = `
             </br>
             <div class="container">
-                <p>${metadata.footer.text1}</p>
+                ${metadata.footer.text1}</br>
                 ${metadata.footer.text2}${metadata.project.license}</br>
                 ${metadata.footer.text3}<a href="${metadata.project.repository}">GitHub</a></br>
                 ${metadata.footer.text4}${metadata.project.version} ${metadata.footer.text5}${metadata.project.lastUpdate}

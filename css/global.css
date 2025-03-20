@@ -39,6 +39,10 @@ a {
     color: black;
 }
 
+.dark-mode a  {
+    color: white;
+}
+
 button, .button {
     padding: 10px 15px;
     flex-wrap: wrap;
@@ -183,22 +187,6 @@ body.dark-mode {
     background-color: #1e1e1e;
 }
 
-/*
-.dark-mode button {
-        padding: 10px 15px;
-        background-color: #00b862;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-}    
-
-.dark-mode button:hover {
-        background-color: #006636;
-    }
-
-*/
-/* Style for the dropdown container */
 .plan-selector-container {
     display: flex;
     flex-direction: column;
@@ -326,12 +314,12 @@ body.dark-mode {
 }
 */
 
-.nyi{
+.nyi, a.nyi {
     background-color: darkgray;
     color: black;
 }
 
-.wip {
+.wip, a.wip {
     background-color: yellow;
     color: black;
 }
