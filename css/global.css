@@ -1,0 +1,329 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    padding:20px;
+    background-color: whitesmoke;
+}
+
+.container {
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container .container {
+    width: fit-content;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 1px;
+    margin: auto;
+}
+
+a {
+    color: black;
+}
+
+.dark-mode a  {
+    color: white;
+}
+
+button, .button {
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 150px;
+    
+}
+
+/* Position the theme toggle */
+#theme-toggle-container {
+    position: absolute;
+    top: 34px; /* Adjusted down for overlap */
+    right: 20px; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+/* Position the mode toggle switch in the upper right */
+#mode-toggle-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+
+button:hover, .button:hover{
+    filter: brightness(70%);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #252525;
+    color: #ffffff;
+}
+
+/* Update other elements for Dark Mode */
+.dark-mode table {
+    border-color: #888;
+}
+
+.dark-mode th {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode td {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .container {
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    background-color: #1e1e1e;
+}
+
+.plan-selector-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+}
+
+/* Style for the dropdown label */
+.plan-selector-container label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style for the dropdown itself */
+#planType {
+    width: 250px; /* Set a fixed width */
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #676767; /* Grey border */
+    border-radius: 6px;
+    background-color: white;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+#planType:hover {
+    border-color: #388E3C; /* Darker green */
+}
+
+/* Focus effect */
+#planType:focus {
+    border-color: #2E7D32; /* Even darker green */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Style the dropdown arrow */
+#planType::-ms-expand {
+    display: none; /* Remove default dropdown arrow in IE */
+}
+
+#planType {
+    appearance: none; /* Remove default dropdown styles */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%234CAF50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5H7z"/></svg>'); /* Custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+    padding-right: 30px;
+}
+
+/* Style the radio button container */
+.radio-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    gap: 10px; /* Adds spacing between radio buttons */
+    margin: 15px 0;
+}
+
+/* Style the label for the radio buttons */
+.radio-container label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    gap: 10px; /* Space between the radio button and text */
+}
+
+/* Hide the default radio button */
+.radio-container input[type="radio"] {
+    appearance: none; /* Hide the default radio button */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Create the filled effect when selected */
+.radio-container input[type="radio"]:checked {
+    background-color: #4CAF50; /* Green background when checked */
+    border: 2px solid #2E7D32; /* Darker green border */
+}
+
+/* Add inner dot effect */
+.radio-container input[type="radio"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Show inner dot when checked */
+.radio-container input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Add hover effect */
+.radio-container input[type="radio"]:hover {
+    border-color: #388E3C; /* Slightly darker green on hover */
+}
+
+
+/*
+.button:hover {
+    filter: brightness(70%);
+}
+*/
+
+.nyi, a.nyi {
+    background-color: darkgray;
+    color: black;
+}
+
+.wip, a.wip {
+    background-color: yellow;
+    color: black;
+}
+
+h3 {
+    width: auto;
+}

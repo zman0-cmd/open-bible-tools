@@ -9,7 +9,7 @@
         },
         {
             "name": "Exodus",
-            "abbreviation": "Ex",
+            "abbreviation": "Exo",
             "order": 2,
             "chapters": 40,
             "filename": "exodus.json"
