@@ -30,6 +30,10 @@ Versioning will loosly follow SymVer.
 
 -
 
+### Known Issues
+
+- The theme transition is not good, and is not persistent between page changes.
+
 ## [0.0.2] - 2025-03-17
 
 ### Added - 0.0.2
