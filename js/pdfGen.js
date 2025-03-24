@@ -1,26 +1,42 @@
 window.addEventListener("DOMContentLoaded", () => {
-    if (!window.jspdf || !window.jspdf.jsPDF || !window.jspdf.autoTable) {
-        alert("PDF or autoTable library not loaded.");
+    console.log("DOM fully loaded and parsed");
+
+    if (!window.jspdf) {
+        console.error("jspdf library not loaded.");
+        alert("PDF library not loaded.");
         return;
     }
 
-    const { jsPDF } = window.jspdf;
-    jsPDF.API.autoTable = window.jspdf.autoTable;
+    if (!window.jspdf.jsPDF) {
+        console.error("jsPDF class not found in jspdf library.");
+        alert("PDF library not loaded.");
+        return;
+    }
+/* Path Wrong...
+    if (!window.jspdf.autoTable) {
+        console.error("autoTable plugin not found in jspdf library.");
+        alert("autoTable library not loaded.");
+        return;
+    }
 
-    // Attach to `window` to make it globally accessible
-    window.generateBasicPDF = function () {
+    console.log("jspdf and autoTable libraries loaded successfully");
+
+    const { jsPDF } = window.jspdf;
+//    jsPDF.API.autoTable = window.jspdf.autoTable;
+*/
+
+function generateBasicPDF () {
+        console.log("generateBasicPDF function called");
+
         const doc = new jsPDF();
+        const htmlTable = document.getElementById('outputTable');
 
         doc.setFont("helvetica", "bold");
         doc.setFontSize(14);
         doc.text("Bible Reading Plan", doc.internal.pageSize.getWidth() / 2, 15, { align: "center" });
 
         doc.autoTable({
-            head: [['Day', 'Reading', 'Completed']],
-            body: [
-                ['Day 1', 'Genesis 1–3', '☐'],
-                ['Day 2', 'Genesis 4–6', '☐'],
-            ],
+            html: htmlTable,
             startY: 25,
             styles: { fontSize: 10, cellPadding: 2 },
             theme: 'grid',
@@ -28,4 +44,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
         doc.save("Bible_Reading_Plan.pdf");
     };
+
+    // Add event listener to the button
+    document.getElementById('downloadPDF').addEventListener('click', generateBasicPDF);
 });

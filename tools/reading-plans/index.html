@@ -37,7 +37,7 @@
         <input type="date" id="startDate" required>
 
         <div class="advanced">
-            <h3><label for="dateFormat">Format Date:</label></h3>
+            <h3><div id="dateFormat">Format Date:</label></h3>
             <label><input type="radio" name="dateFormat" value="MDY" checked> MM/DD/YYYY</label>
             <label><input type="radio" name="dateFormat" value="ISO"> YYYY-MM-DD</label>
             <label><input type="radio" name="dateFormat" value="DMY"> DD/MM/YYYY</label>
@@ -91,8 +91,13 @@
     </div>
     <div class ="script">
         <!-- Scripts to load -->
-        <script src="/js/libs/jspdf.umd.min.js"></script>
-        <script src="/js/libs/jspdf.plugin.autotable.min.js"></script>
+        <!-- ignore the minified js for now.
+            <script src="/js/libs/jspdf.plugin.autotable.min.js"></script>
+            <script src="/js/libs/jspdf.umd.min.js"></script>
+        -->
+        <script src="/js/libs/jspdf.umd.js"></script>
+        <script src="/js/libs/jspdf.plugin.autotable.js"></script>
+
         <script src="/js/theme.js"></script>
         <script src="/tools/reading-plans/js/math.js"></script> 
         <script src="/tools/reading-plans/js/utils.js"></script>
