@@ -1,3 +1,7 @@
+* {
+    transition: all 0.5s ease-in-out;
+}
+
 body {
     font-family:Arial, Helvetica, sans-serif;
     text-align:center;
@@ -165,6 +169,7 @@ input:checked + .slider:before {
 body.dark-mode {
     background-color: #252525;
     color: #ffffff;
+    transition: all 0.5s ease-in-out;
 }
 
 /* Update other elements for Dark Mode */
