@@ -1,59 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/global.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Bible Tools</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon | Open Bible Tools</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+
+    .countdown-section {
+      margin-bottom: 1.8rem;
+    }
+
+    .countdown-label {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .countdown {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: #999;
+      margin-top: 2rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #111;
+        color: #eee;
+      }
+
+      p {
+        color: #ccc;
+      }
+
+      .countdown {
+        color: #eee;
+      }
+
+      footer {
+        color: #666;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div id="theme-toggle-container">
-        <span id="themeLabel">Light Mode</span>
-        <label class="switch">
-            <input type="checkbox" id="themeToggle">
-            <span class="slider round"></span>
-        </label>
-    </div>
-    <div class="container">
-        <h1>Welcome to Bible Tools</h1>
-        <p>Free and open-source tools for Bible study and reading plans.</p>
-        
-        <div class="container">
-            <h2>Legend</h2>
-                <div class="row">
-                    <div class="column"><button class="wip">Work In Progress</button></div>
-                    <div class="column"><button class="nyi">Coming Soon</button></div>
-                    <div class="column"><button>Complete</button></div>
-            </div>
-        </div>
-            <h1>About this Project</h1>
+  <div class="container">
+    <h1>Coming Soon</h1>
+    <p>Open Bible Tools is in development.<br>Follow along as we prepare to launch in three stages.</p>
 
-        <h1>Available Tools</h1>
-        <div class="row">
-            <div class ="column">
-                <h3>Reading Plan Generators / Archives</h3>
-                <div class="row">
-                    <div class ="column"><a href="tools/reading-plans/" class="button wip">Individual</a></div>
-                    <div class ="column"><a href="tools/group-reading-plans" class="button nyi">Group / Advanced</a></div>
-                </div>
-                <div class="row">
-                    <div class ="column"><a href="tools/reading-plan-library/" class="button wip">Reading Plan Library</a></div>
+    <div class="countdown-section" id="alphaSection">
+      <div class="countdown-label">Alpha Launch</div>
+      <div class="countdown" id="alphaCountdown">Loading...</div>
+    </div>
 
-                </div>
-            </div>
-            <div class ="column">
-                <h3>Scripture Tools</h3>
-                <div class="row">
-                    <div class ="column"><a href="#" class="button nyi">Verse Search</a></div>
-                    <div class ="column"><a href="#" class="button nyi">Concordance</a></div>
-                </div>
-            </div>
-            </div>
+    <div class="countdown-section" id="betaSection">
+      <div class="countdown-label">Beta Launch</div>
+      <div class="countdown" id="betaCountdown">Loading...</div>
     </div>
-    <div class = "scripts">
-        <!-- Scripts to load -->
-        <script src="/js/theme.js"></script>
+
+    <div class="countdown-section" id="releaseSection">
+      <div class="countdown-label">v1.0 Release</div>
+      <div class="countdown" id="releaseCountdown">Loading...</div>
     </div>
-<script src="/js/footer.js"></script>
+
+    <footer>
+      &copy; <span id="year"></span> Open Bible Tools | <a href="https://github.com/openbibletools" style="color: inherit;">GitHub</a>
+    </footer>
+  </div>
+
+  <script>
+    const countdowns = [
+      {
+        label: "Alpha",
+        elementId: "alphaCountdown",
+        sectionId: "alphaSection",
+        date: new Date("2025-04-15T00:00:00Z")
+      },
+      {
+        label: "Beta",
+        elementId: "betaCountdown",
+        sectionId: "betaSection",
+        date: new Date("2025-07-15T00:00:00Z")
+      },
+      {
+        label: "Release",
+        elementId: "releaseCountdown",
+        sectionId: "releaseSection",
+        date: new Date("2025-12-01T00:00:00Z")
+      }
+    ];
+
+    function updateCountdowns() {
+      const now = new Date().getTime();
+
+      countdowns.forEach(item => {
+        const distance = item.date.getTime() - now;
+        const el = document.getElementById(item.elementId);
+        const section = document.getElementById(item.sectionId);
+
+        if (distance <= 0) {
+          el.innerText = `${item.label} launched!`;
+        } else {
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          el.innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+      });
+    }
+
+    setInterval(updateCountdowns, 1000);
+    updateCountdowns();
+
+    // Set current year in footer
+    document.getElementById("year").innerText = new Date().getFullYear();
+  </script>
 </body>
 </html>

@@ -2,8 +2,8 @@
     "project": {
       "name": "Open Bible Tools",
       "description": "A free, open-source online Bible toolset.",
-      "version": "v0.1.0",
-      "lastUpdate": "2025-03-20",
+      "version": "v0.0.3",
+      "lastUpdate": "2025-04-09",
       "year": "2025",
       "license": "MIT License",
       "repository": "https://github.com/zman0-cmd/open-bible-tools",
@@ -19,7 +19,14 @@
       "readingPlanGenerator": {
         "name": "Bible Reading Plan Generator",
         "description": "Generates customized Bible reading plans.",
-        "url": "/tools/reading-plans/"
+        "url": "/tools/reading-plans/",
+        "contributors": 
+        [
+          {
+            "name": "Zackary Mace",
+            "url": "https://zackmace.com"
+          }
+        ]
       },
       "futureProject": {
         "name": "",

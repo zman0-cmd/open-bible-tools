@@ -7,7 +7,7 @@ Versioning will loosly follow SymVer.
 
 ## [0.0.3] - 2025-03-24
 
-### Added
+### Added - 0.0.3
 
 - Added project metadata, for dynamic changes to project wide code, like footers.
 - Added a changelog.
@@ -15,22 +15,22 @@ Versioning will loosly follow SymVer.
 - Text of the BSB is formatted in JSON and is stored in the project.
 - Empty structures for additional versions of the Bible.
 
-### Changed
+### Changed - 0.0.3
 
 - Theme and CSS are unified for the project.
 - Minor theme tweeks across the whole project.
 - PDF generation moved to it's own functions.
 
-### Fixed
+### Fixed - 0.0.3
 
 - Theme and PDF Generation was broken
 - Changelog was updated for a few formatting issues and errors.
 
-### Removed
+### Removed - 0.0.3
 
 -
 
-### Known Issues
+### Known Issues - 0.0.3
 
 - The theme transition is not good, and is not persistent between page changes.
 
