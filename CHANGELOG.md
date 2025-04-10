@@ -3,7 +3,21 @@
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-Versioning will loosly follow SymVer.
+Versioning will loosly follow SymVer. [SymVer](https://semver.org/spec/v2.0.0.html)
+
+## [0.0.4] - TBD
+
+### Added - 0.0.4
+
+- Theme from themefisher (MIT License).
+
+### Changed - 0.0.4
+
+### Fixed - 0.0.4
+
+### Removed - 0.0.4
+
+### Known Issues - 0.0.4
 
 ## [0.0.3] - 2025-03-24
 
