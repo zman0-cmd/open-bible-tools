@@ -44,7 +44,7 @@ function getPreferredStyleSheet() {
   }
   return null;
 }
-
+/*
 function createCookie(name,value,days) {
   if (days) {
     var date = new Date();
@@ -81,3 +81,4 @@ var cookie = readCookie("style");
 var title = cookie ? cookie : getPreferredStyleSheet();
 setActiveStyleSheet(title);
 
+*/
