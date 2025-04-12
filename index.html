@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="description" content="Open Bible Tools - A platform to explore, study, and engage with the Bible. Follow our journey through Alpha, Beta, and v1.0 releases." />
+  <meta name="keywords" content="Bible tools, Bible study, Open Bible, Alpha launch, Beta launch, Bible software, Bible resources, Free, Open Source" />
+  <meta name="author" content="Open Bible Tools" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Coming Soon | Open Bible Tools</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
@@ -19,6 +22,8 @@
       text-align: center;
       flex-direction: column;
     }
+
+    .
 
     .container {
       padding: 2rem;
@@ -58,6 +63,23 @@
       margin-top: 2rem;
     }
 
+    button {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
     @media (prefers-color-scheme: dark) {
       body {
         background-color: #111;
@@ -85,17 +107,20 @@
 
     <div class="countdown-section" id="alphaSection">
       <div class="countdown-label">Alpha Launch</div>
-      <div class="countdown" id="alphaCountdown">Loading...</div>
+      <div class="countdown" id="alphaCountdown">Loading...</div></br>
+      <button id="alphaButton" onclick="window.location.href='./alpha-landing.html'">Go to Alpha</button>
     </div>
 
     <div class="countdown-section" id="betaSection">
       <div class="countdown-label">Beta Launch</div>
-      <div class="countdown" id="betaCountdown">Loading...</div>
+      <div class="countdown" id="betaCountdown">Loading...</div></br>
+      <button id="betaButton" onclick="window.location.href='#'">Go to Beta</button>
     </div>
 
     <div class="countdown-section" id="releaseSection">
       <div class="countdown-label">v1.0 Release</div>
-      <div class="countdown" id="releaseCountdown">Loading...</div>
+      <div class="countdown" id="releaseCountdown">Loading...</div></br>
+      <button id="releaseButton" onclick="window.location.href='#'">Go to v1.0</button>
     </div>
 
     <footer>
@@ -108,19 +133,19 @@
       {
         label: "Alpha",
         elementId: "alphaCountdown",
-        sectionId: "alphaSection",
+        buttonId: "alphaButton",
         date: new Date("2025-04-15T00:00:00Z")
       },
       {
         label: "Beta",
         elementId: "betaCountdown",
-        sectionId: "betaSection",
+        buttonId: "betaButton",
         date: new Date("2025-07-15T00:00:00Z")
       },
       {
         label: "Release",
         elementId: "releaseCountdown",
-        sectionId: "releaseSection",
+        buttonId: "releaseButton",
         date: new Date("2025-12-01T00:00:00Z")
       }
     ];
@@ -131,10 +156,11 @@
       countdowns.forEach(item => {
         const distance = item.date.getTime() - now;
         const el = document.getElementById(item.elementId);
-        const section = document.getElementById(item.sectionId);
+        const button = document.getElementById(item.buttonId);
 
         if (distance <= 0) {
           el.innerText = `${item.label} launched!`;
+          button.style.display = "inline-block";
         } else {
           const days = Math.floor(distance / (1000 * 60 * 60 * 24));
           const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -142,6 +168,7 @@
           const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
           el.innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+          button.style.display = "none";
         }
       });
     }
