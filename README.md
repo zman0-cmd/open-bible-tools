@@ -5,6 +5,12 @@
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/zman0-cmd/open-bible-tools)
 ![GitHub Language Count](https://img.shields.io/github/languages/count/zman0-cmd/open-bible-tools)
 
+#ARCHIVE NOTE
+
+-hey, so this project died before it even got started. FLOSS did not really fulfill the needs of OBT.org... I need to ensure theological consistency and want to be able to monitor changes and control the project more than an OSS project could dream to have. 
+
+To the two people who will ever read this. I hope youll understand. Thanks -ZM`
+
 ![Repobeats](https://repobeats.axiom.co/api/embed/d4c16ab6e32b408f294a8f18f71afb4832c10f20.svg "Repobeats analytics image")  
 
 A **Free & Open-Source Toolkit** for Bible study.  
