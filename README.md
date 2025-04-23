@@ -5,7 +5,7 @@
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/zman0-cmd/open-bible-tools)
 ![GitHub Language Count](https://img.shields.io/github/languages/count/zman0-cmd/open-bible-tools)
 
-#ARCHIVE NOTE
+# ARCHIVE NOTE
 
 -hey, so this project died before it even got started. FLOSS did not really fulfill the needs of OBT.org... I need to ensure theological consistency and want to be able to monitor changes and control the project more than an OSS project could dream to have. 
 
